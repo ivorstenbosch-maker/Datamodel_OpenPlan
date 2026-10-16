@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Datamodel</title>
+<link href="css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+const guid_look = new Map([['0B788218-1194-44F2-B62F-974CACF92E6C', 'EA1.htm'],
+['6505FE8F-D57F-42A1-B8AF-1870A9947687', 'EA3.htm'],
+['0D57CABC-1304-4CDA-A905-79CB07143ADA', 'EA5.htm'],
+['853285F9-0EC0-338D-B19C-3FA1CA40C3FA', 'EA7.htm'],
+['8A3A597B-DB0A-80ED-8AE3-9DBED65F05C5', 'EA9.htm'],
+['681F60BC-71AB-4742-88C7-D0EFCA5D8137', 'EA10.htm'],
+['10DCD294-9B64-490F-A64D-5CC9CB607324', 'EA11.htm'],
+['6887F4ED-B72E-4763-B5F0-184217631989', 'EA12.htm'],
+['88844300-763A-4B22-817B-C3352B1B12CC', 'EA13.htm'],
+['529CB7F3-A137-404B-B3AD-0145C33D54DB', 'EA14.htm'],
+['09A7CFA6-D084-4819-A2E4-20BB064DD272', 'EA15.htm'],
+['BAE17577-FD97-41B3-A168-DFEFE289B0A5', 'EA16.htm'],
+['FDFBAC5C-EFB4-45F9-B730-382744C42EB8', 'EA17.htm'],
+['39E91508-C1F6-46F7-8629-BB4A2D97D7A2', 'EA18.htm'],
+['94BFFFF4-C19F-48F2-B4C6-BEFB75C2EFCA', 'EA19.htm'],
+['53CB0382-F99B-4703-8174-F88AF9C7A2CA', 'EA20.htm'],
+['B760F51B-EAFE-433F-928F-5DD2FB4CF529', 'EA21.htm'],
+['47D6BF51-142E-4659-B4A7-6CA857543EB9', 'EA22.htm'],
+['A181BDE1-3D78-47CD-8819-9FB87340ACFE', 'EA23.htm'],
+['528E0360-F6BC-43C9-B127-2603DE475FE8', 'EA24.htm'],
+['2788C524-B490-4FBE-90D6-405E5BA3F285', 'EA25.htm'],
+['2161C3E0-1984-472E-94BA-717A3C87E769', 'EA26.htm'],
+['334E0D6B-448D-4373-9DCD-EF6562933999', 'EA27.htm'],
+['B8F1BADF-4E1C-2186-919C-9794F3742BCA', 'EA28.htm'],
+['8B7873BA-DFCE-C23A-941A-F9908D0371E2', 'EA29.htm'],
+['B2915B26-B2B8-4897-94E9-15660CB0DF2A', 'EA30.htm'],
+['A3569DA2-036F-A636-AA7E-810741CAA4E8', 'EA31.htm'],
+['BF40406B-15A1-8820-971F-9C7BDD8BA692', 'EA32.htm'],
+['876F7CFA-4D27-C7BE-8072-A3A7427EEFCC', 'EA33.htm'],
+['8278CC88-DB6D-4280-B16A-AE858E52D584', 'EA34.htm'],
+]);
+
+		function switchProjectProperties()
+		{
+			if (document.getElementById("proj00").style.display == "none")
+			{
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			}
+			else
+			{
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+		}
+
+		function switchAdvancedProperties()
+		{
+
+			if (document.getElementById("adv00").style.display == "none")
+			{
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			}
+			else
+			{
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+
+		function getAnchor() {
+			var currentUrl = document.URL,
+			urlParts   = currentUrl.split('#');
+			return (urlParts.length > 1) ? urlParts[1] : null;
+		}
+
+		function initPage()
+		{
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			const guidlink = urlParams.get('guid');
+
+			if (guidlink != null)
+			{
+				var link = guidlink.toUpperCase();
+				var page = guid_look.get(link);
+
+				if (page != null)
+				{
+					var pageredir = page;
+					const anchor = getAnchor();
+					if (anchor != null)
+						pageredir += "#" + anchor;
+					window.location.replace("EARoot/" + pageredir);
+					return;
+				}
+			}
+
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++)
+			{
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+			if (document.getElementById('TableGroup') != null)
+			{
+				toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+			}
+
+		}
+		
+		document.addEventListener('DOMContentLoaded', () => {
+			const img = document.querySelector('.diagram_image img');
+			const mapAreas = document.querySelectorAll('area');
+			
+			if (img && mapAreas.length > 0) {
+				//Get original and rendered image dimensions
+				const originalWidth = img.naturalWidth;
+				const originalHeight = img.naturalHeight;
+				const renderedWidth = img.clientWidth || originalWidth; 
+				const renderedHeight = img.clientHeight || originalHeight; 
+				
+				//Calculate scaling factors
+				const scaleX = renderedWidth / originalWidth;
+				const scaleY = renderedHeight / originalHeight;
+				
+				//Adjust map area coordinates
+				mapAreas.forEach((area) => {
+				  const originalCoords = area.getAttribute('coords').split(',').map(Number);
+				  const scaledCoords = originalCoords.map((coord, index) =>
+					index % 2 === 0 ? coord * scaleX : coord * scaleY
+				  );
+				  area.setAttribute('coords', scaledCoords.join(','));
+				});
+			}
+		});
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Datamodel </h1>
+			<img class="header_image" src="images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p></p>
+		</div>
+		
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="images/175.png" alt="Diagram"/> <a href="./EARoot/EA1.htm">Generalisaties</a></li>
+<li><img src="images/175.png" alt="Diagram"/> <a href="./EARoot/EA3.htm">Lifecycle Model</a></li>
+<li><img src="images/175.png" alt="Diagram"/> <a href="./EARoot/EA5.htm">PDCA - Conceptuele view</a></li>
+<li><img src="images/175.png" alt="Diagram"/> <a href="./EARoot/EA7.htm">PDCA - Logisch datamodel</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA10.htm">BusinessObject</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA11.htm">BusinessObjectMetadata</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA12.htm">BusinessObjectState</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA13.htm">BusinessObjectType</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA14.htm">BusinessObjectTypeMetadata</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA15.htm">BusinessObjectTypeState</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA28.htm">Configuratie</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA29.htm">Doel</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA30.htm">Doeltype</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA31.htm">Domein</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA32.htm">Evaluatie</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA18.htm">Evaluatietype</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA19.htm">Plan</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA20.htm">Positie</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA21.htm">Positietype</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA23.htm">Subdoel</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA24.htm">Subdoeltype</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA25.htm">Subject</a></li>
+<li><img src="images/230.png" alt="DataType"/> <a href="./EARoot/EA16.htm">Date</a></li>
+<li><img src="images/230.png" alt="DataType"/> <a href="./EARoot/EA17.htm">DateTime</a></li>
+<li><img src="images/247.png" alt="Enumeration"/> <a href="./EARoot/EA22.htm">RedenWijziging</a></li>
+<li><img src="images/247.png" alt="Enumeration"/> <a href="./EARoot/EA33.htm">Resultaat</a></li>
+<li><img src="images/247.png" alt="Enumeration"/> <a href="./EARoot/EA34.htm">Status</a></li>
+<li><img src="images/230.png" alt="DataType"/> <a href="./EARoot/EA26.htm">URN</a></li>
+<li><img src="images/230.png" alt="DataType"/> <a href="./EARoot/EA27.htm">UUID</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell">
+						<div class="welcome_message">
+						<h2>Welcome to your model</h2>
+						<p>To get started navigate through the model via the index on the left</p> 
+						</div>
+						<div class="PageBody">
+	<div class="diagram_image"> 
+<img src="./EARoot/EA8.png" usemap="#EA8" width="1878" height="1682" border="0" />
+
+<MAP NAME="EA8">
+<area shape="rect" coords="71,407,329,612" href="./EARoot/EA22.htm" target="_self">
+<area shape="rect" coords="1604,47,1862,281" href="./EARoot/EA31.htm" target="_self">
+<area shape="rect" coords="66,246,324,363" href="./EARoot/EA34.htm" target="_self">
+<area shape="rect" coords="66,47,326,203" href="./EARoot/EA33.htm" target="_self">
+<area shape="rect" coords="1604,407,1862,681" href="./EARoot/EA18.htm" target="_self">
+<area shape="rect" coords="846,15,1104,312" href="./EARoot/EA28.htm" target="_self">
+<area shape="rect" coords="1604,1280,1863,1659" href="./EARoot/EA32.htm" target="_self">
+<area shape="rect" coords="846,408,1104,681" href="./EARoot/EA30.htm" target="_self">
+<area shape="rect" coords="846,792,1104,1238" href="./EARoot/EA29.htm" target="_self">
+<area shape="rect" coords="1224,408,1482,681" href="./EARoot/EA24.htm" target="_self">
+<area shape="rect" coords="474,408,732,681" href="./EARoot/EA21.htm" target="_self">
+<area shape="rect" coords="15,792,278,1035" href="./EARoot/EA25.htm" target="_self">
+<area shape="rect" coords="1220,792,1478,1238" href="./EARoot/EA23.htm" target="_self">
+<area shape="rect" coords="473,792,731,1238" href="./EARoot/EA20.htm" target="_self">
+<area shape="rect" coords="473,1311,731,1667" href="./EARoot/EA19.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">PDCA - Logisch datamodel : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">17-9-2026 19:43:40</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">9-10-2026 15:17:10</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="./images//plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Gebruiker</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="./images//plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{853285F9-0EC0-338D-B19C-3FA1CA40C3FA}</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+
+</div>
+</body>
+</html>

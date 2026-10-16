@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Tables</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
+<script>
+
+  function switchProjectProperties() {
+			if (document.getElementById("proj00").style.display == "none") {
+				document.getElementById("proj00").style.display = "revert";
+				document.getElementById("proj01").style.display = "revert";
+				document.getElementById("proj02").style.display = "revert";
+				document.getElementById("proj03").style.display = "revert";
+				document.getElementById("proj04").style.display = "revert";
+				document.getElementById("proj05").style.display = "revert";
+			} else {
+				document.getElementById("proj00").style.display = "none";
+				document.getElementById("proj01").style.display = "none";
+				document.getElementById("proj02").style.display = "none";
+				document.getElementById("proj03").style.display = "none";
+				document.getElementById("proj04").style.display = "none";
+				document.getElementById("proj05").style.display = "none";
+			}
+}
+
+		function switchAdvancedProperties(){
+
+			if (document.getElementById("adv00").style.display == "none") {;
+				document.getElementById("adv00").style.display = "revert";
+				document.getElementById("adv01").style.display = "revert";
+			} else {
+				document.getElementById("adv00").style.display = "none";
+				document.getElementById("adv01").style.display = "none";
+			}
+		}
+		function initPage()
+        {			
+			var divs = document.getElementsByClassName("ObjectDetailsNotes");
+			for (var j = 0; j < divs.length; j++) {
+				var tmpStr = divs[j].innerHTML;
+				tmpStr = tmpStr.replace(/#gt;/g, "&gt;");
+				tmpStr = tmpStr.replace(/#lt;/g, "&lt;");
+
+				tmpStr = tmpStr.replace(/&gt;/g, ">");
+				tmpStr = tmpStr.replace(/&lt;/g, "<");
+
+				divs[j].innerHTML = tmpStr;
+			}
+
+            if (document.getElementById('TableGroup') != null)
+            {
+                toggleItem(document.getElementById('TableGroup').getElementsByTagName('li')[0].id.replace("Title", ""));
+            }
+
+        }
+		
+		document.addEventListener('DOMContentLoaded', () => {
+			const img = document.querySelector('.diagram_image img');
+			const mapAreas = document.querySelectorAll('area');
+
+			if (img && mapAreas.length > 0) {
+				//Get original and rendered image dimensions
+				const originalWidth = img.naturalWidth;
+				const originalHeight = img.naturalHeight;
+				const renderedWidth = img.clientWidth || originalWidth; 
+				const renderedHeight = img.clientHeight || originalHeight; 
+				
+				//Calculate scaling factors
+				const scaleX = renderedWidth / originalWidth;
+				const scaleY = renderedHeight / originalHeight;
+
+				//Adjust map area coordinates
+				mapAreas.forEach((area) => {
+				  const originalCoords = area.getAttribute('coords').split(',').map(Number);
+				  const scaledCoords = originalCoords.map((coord, index) =>
+					index % 2 === 0 ? coord * scaleX : coord * scaleY
+				  );
+				  area.setAttribute('coords', scaledCoords.join(','));
+				});
+			}
+		});
+</script>
+<style>
+
+</style>
+</head>
+<body onload="initPage();">
+<div class="section group" >
+
+		<div class="col span_2_of_2 header_frame">
+			<h1> Tables </h1>
+			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
+			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
+		</div>
+		<div class="col span_2_of_2 breadcrumb_frame">
+			<p><a href="../EA7.htm">Logisch datamodel (LDM)</a> / <a href="EA37.htm">Tables</a> / <a href="EA35.htm">Tables</a></p>
+		</div>
+			
+		<table class="contentmaintable">
+			<!-- <tfoot>
+				<tr>
+					<td>foot1</td>
+					<td>foot2</td>
+				</tr>
+			</tfoot> -->
+			<tbody>
+				<tr>
+					<td class="indexcell">
+						<div class="projectBrowserTitle">Project: </div>
+						<ul>
+<li><img src="../../images/175.png" alt="Diagram"/> <a href="EA35.htm">Tables</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA38.htm">Businessobject</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA39.htm">Businessobjectmetadata</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA40.htm">Businessobjectstate</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA41.htm">Businessobjecttype</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA42.htm">Businessobjecttypemetadata</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA43.htm">Businessobjecttypestate</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA44.htm">Configuratie</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA45.htm">Date</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA46.htm">Datetime</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA47.htm">Doel</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA48.htm">Doeltype</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA49.htm">Domein</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA50.htm">Evaluatie</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA51.htm">Evaluatietype</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA52.htm">heeft</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA53.htm">legt vast</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA54.htm">legt vast</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA55.htm">legt vast</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA56.htm">Plan</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA57.htm">Positie</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA58.htm">Positietype</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA59.htm">Product</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA60.htm">Producttype</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA61.htm">Subdoel</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA62.htm">Subdoeltype</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA63.htm">Subject</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA64.htm">Urn</a></li>
+<li><img src="../../images/28.png" alt="Class"/> <a href="EA65.htm">Uuid</a></li>
+</ul>
+
+					</td>
+					<td class="contentcell"><div class="PageBody">
+	<div class="diagram_image"> 
+<img src="EA36.png" usemap="#EA36" width="2519" height="2425" border="0" />
+
+<MAP NAME="EA36">
+<area shape="rect" coords="2093,2132,2235,2288" href="EA65.htm" target="_self">
+<area shape="rect" coords="2096,1652,2231,1808" href="EA64.htm" target="_self">
+<area shape="rect" coords="2078,1022,2249,1178" href="EA46.htm" target="_self">
+<area shape="rect" coords="2091,812,2235,968" href="EA45.htm" target="_self">
+<area shape="rect" coords="1532,645,1820,866" href="EA63.htm" target="_self">
+<area shape="rect" coords="998,1242,1316,1521" href="EA62.htm" target="_self">
+<area shape="rect" coords="368,582,660,900" href="EA61.htm" target="_self">
+<area shape="rect" coords="2235,602,2423,758" href="EA60.htm" target="_self">
+<area shape="rect" coords="2084,392,2244,548" href="EA59.htm" target="_self">
+<area shape="rect" coords="1718,884,2027,1182" href="EA58.htm" target="_self">
+<area shape="rect" coords="1142,579,1425,897" href="EA57.htm" target="_self">
+<area shape="rect" coords="1061,897,1259,1092" href="EA52.htm" target="_self">
+<area shape="rect" coords="1391,942,1661,1182" href="EA56.htm" target="_self">
+<area shape="rect" coords="1389,1772,1715,2012" href="EA51.htm" target="_self">
+<area shape="rect" coords="75,734,375,1188" href="EA50.htm" target="_self">
+<area shape="rect" coords="2064,1872,2264,2067" href="EA49.htm" target="_self">
+<area shape="rect" coords="1358,1212,1655,1491" href="EA48.htm" target="_self">
+<area shape="rect" coords="765,392,1037,710" href="EA47.htm" target="_self">
+<area shape="rect" coords="746,1947,995,2142" href="EA55.htm" target="_self">
+<area shape="rect" coords="1421,1497,1667,1692" href="EA54.htm" target="_self">
+<area shape="rect" coords="1061,1677,1307,1872" href="EA53.htm" target="_self">
+<area shape="rect" coords="1752,1643,1995,1941" href="EA44.htm" target="_self">
+<area shape="rect" coords="1719,2034,2064,2411" href="EA43.htm" target="_self">
+<area shape="rect" coords="1344,2054,1679,2372" href="EA42.htm" target="_self">
+<area shape="rect" coords="2049,1343,2279,1577" href="EA41.htm" target="_self">
+<area shape="rect" coords="1661,15,1976,431" href="EA40.htm" target="_self">
+<area shape="rect" coords="1184,29,1488,347" href="EA39.htm" target="_self">
+<area shape="rect" coords="2235,15,2504,249" href="EA38.htm" target="_self">
+</MAP>
+ </div>
+	<div class="ObjectTitle">Tables : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">24-9-2026 15:47:02</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">24-9-2026 15:47:47</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">Gebruiker</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="../../images/plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{52ADDBDE-721F-42f1-B21C-9C4CF12A4D49}</td>
+		</tr>
+	</table>
+	
+</div>
+
+ </td>
+				</tr>
+			</tbody>
+		</table>
+		
+</div>
+</body>
+</html>
+
