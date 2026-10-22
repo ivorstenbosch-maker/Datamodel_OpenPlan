@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Tables::Date</title>
+<title>DDL::Businessobject</title>
 <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -90,12 +90,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Tables::Date </h1>
+			<h1> DDL::Businessobject </h1>
 			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../EA7.htm">Logisch datamodel (LDM)</a> / <a href="EA37.htm">Tables</a> / <a href="EA45.htm">Date</a></p>
+			<p><a href="../EA7.htm">Datamodel</a> / <a href="EA44.htm">DDL</a> / <a href="EA45.htm">Businessobject</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -110,20 +110,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA37.htm">Tables</a></ul>
+<a href="EA44.htm">DDL</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Date  : Public  &lt;&lt;table&gt;&gt; Table</span>
+	<span class="ObjectTitle">Businessobject  : Public  &lt;&lt;table&gt;&gt; Table</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">24-9-2026 15:47:03</td>
+			<td width="85%" class="ObjectDetailsValue">22-10-2026 11:30:26</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">24-9-2026 15:47:03</td>
+			<td class="ObjectDetailsValue">22-10-2026 11:30:26</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -168,18 +168,20 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{03044789-54AA-4ff2-8998-1C8A2C2B4E1F}</td>
+			<td class="ObjectDetailsValue">{2DACB836-39B6-4f24-B8C3-BD09D022A08E}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA35.htm">Tables</a></td>
+			<td class="ObjectDetailsValue"><a href="EA42.htm">DDL</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">Een BusinessObject vertegenwoordigt een uniek en identificeerbaar object binnen de bedrijfsvoering. Het vormt het generieke concept waaruit concrete bedrijfsobjecten zijn afgeleid.&lt;br/&gt;&lt;br/&gt;Een BusinessObject beschikt over een stabiele, persistente identiteit die gedurende de volledige levenscyclus van het object behouden blijft. De toestand van een BusinessObject kan in de tijd wijzigen. Iedere relevante wijziging kan worden vastgelegd als een afzonderlijke versie, met bijbehorende state- en metadata-informatie.&lt;br/&gt;&lt;br/&gt;Het BusinessObject-concept definieert daarmee de generieke structuur en levenscyclus van bedrijfsobjecten, onafhankelijk van de specifieke inhoudelijke eigenschappen van het betreffende object.&lt;br/&gt;&lt;br/&gt;Concrete bedrijfsobjecten erven deze generieke kenmerken en voegen hun eigen domeinspecifieke attributen en relaties toe.&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent != null ? parent.toggleItem('Attributes') : toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent != null ? parent.toggleItem('Operations') : toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -191,7 +193,78 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					<a name="{F7169404-64DF-4650-85F8-244E091F1EA0}"></a>DateID
+					<a name="{826169C4-AB02-4e15-88BE-B0FB7DB79F9B}"></a>Classificatievertrouwelijk
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					varchar(50)
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Categorisering van het bedrijfsobject volgens een classificatieschema of taxonomie van vetrouwelijkheid.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{F4F6BF75-B7DA-426a-B4A2-ECEEA841BDDC}"></a>Identificatie
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					uuid
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Unieke identificatie waarmee het bedrijfsobject eenduidig kan worden herkend.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{E0710638-7844-4235-8B31-BBE5213B8869}"></a>Naam
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					varchar(50)
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{99C28956-6990-497c-8419-1071C720BB4D}"></a>BusinessobjectID
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -217,14 +290,14 @@
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{8B77F4A0-489D-4d9f-A66A-BFFFFC22FC75}"></a><strong>PK_Date</strong> (DateID: integer, 
+					<a name="{1F1800B7-7F66-4d52-92B8-5CD937D4303A}"></a><strong>PK_Businessobject</strong> (BusinessobjectID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations274" class="DetailsDiv" >
+						<div id="detailsDIVOperations241" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -233,7 +306,40 @@
 			</tr>
 
 		</table>
-</div>		<div class="ItemBody" id="CustomPropertiesTable">
+</div>		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA47.htm">«table» Businessobjectstate</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_BusinessObjectState_heeft<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_Businessobject<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink242" /></button>Details:
+							<div id="detailsDIVLink242" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
 			<table class="Table ea_table">
 				<tr>
 					<td width="30%" class="TableHeading">Property</td>

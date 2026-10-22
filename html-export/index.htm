@@ -5,36 +5,74 @@
 <title>Datamodel</title>
 <link href="css/ea.css" rel="stylesheet" type="text/css" />
 <script>
-const guid_look = new Map([['0B788218-1194-44F2-B62F-974CACF92E6C', 'EA1.htm'],
-['6505FE8F-D57F-42A1-B8AF-1870A9947687', 'EA3.htm'],
-['0D57CABC-1304-4CDA-A905-79CB07143ADA', 'EA5.htm'],
-['853285F9-0EC0-338D-B19C-3FA1CA40C3FA', 'EA7.htm'],
-['8A3A597B-DB0A-80ED-8AE3-9DBED65F05C5', 'EA9.htm'],
-['681F60BC-71AB-4742-88C7-D0EFCA5D8137', 'EA10.htm'],
-['10DCD294-9B64-490F-A64D-5CC9CB607324', 'EA11.htm'],
-['6887F4ED-B72E-4763-B5F0-184217631989', 'EA12.htm'],
-['88844300-763A-4B22-817B-C3352B1B12CC', 'EA13.htm'],
-['529CB7F3-A137-404B-B3AD-0145C33D54DB', 'EA14.htm'],
-['09A7CFA6-D084-4819-A2E4-20BB064DD272', 'EA15.htm'],
+const guid_look = new Map([['6505FE8F-D57F-42A1-B8AF-1870A9947687', 'EA1.htm'],
+['0D57CABC-1304-4CDA-A905-79CB07143ADA', 'EA3.htm'],
+['853285F9-0EC0-338D-B19C-3FA1CA40C3FA', 'EA5.htm'],
+['8A3A597B-DB0A-80ED-8AE3-9DBED65F05C5', 'EA7.htm'],
+['EEDA5FC0-1AA9-4432-BBA5-DC5FF64F2354', 'EA8.htm'],
+['681F60BC-71AB-4742-88C7-D0EFCA5D8137', 'EA9.htm'],
+['10DCD294-9B64-490F-A64D-5CC9CB607324', 'EA10.htm'],
+['6887F4ED-B72E-4763-B5F0-184217631989', 'EA11.htm'],
+['88844300-763A-4B22-817B-C3352B1B12CC', 'EA12.htm'],
+['529CB7F3-A137-404B-B3AD-0145C33D54DB', 'EA13.htm'],
+['09A7CFA6-D084-4819-A2E4-20BB064DD272', 'EA14.htm'],
+['21C9B4A8-3CCE-400B-8C07-FA7855F856A7', 'EA15.htm'],
 ['BAE17577-FD97-41B3-A168-DFEFE289B0A5', 'EA16.htm'],
 ['FDFBAC5C-EFB4-45F9-B730-382744C42EB8', 'EA17.htm'],
-['39E91508-C1F6-46F7-8629-BB4A2D97D7A2', 'EA18.htm'],
-['94BFFFF4-C19F-48F2-B4C6-BEFB75C2EFCA', 'EA19.htm'],
-['53CB0382-F99B-4703-8174-F88AF9C7A2CA', 'EA20.htm'],
-['B760F51B-EAFE-433F-928F-5DD2FB4CF529', 'EA21.htm'],
-['47D6BF51-142E-4659-B4A7-6CA857543EB9', 'EA22.htm'],
-['A181BDE1-3D78-47CD-8819-9FB87340ACFE', 'EA23.htm'],
-['528E0360-F6BC-43C9-B127-2603DE475FE8', 'EA24.htm'],
-['2788C524-B490-4FBE-90D6-405E5BA3F285', 'EA25.htm'],
-['2161C3E0-1984-472E-94BA-717A3C87E769', 'EA26.htm'],
-['334E0D6B-448D-4373-9DCD-EF6562933999', 'EA27.htm'],
-['B8F1BADF-4E1C-2186-919C-9794F3742BCA', 'EA28.htm'],
-['8B7873BA-DFCE-C23A-941A-F9908D0371E2', 'EA29.htm'],
-['B2915B26-B2B8-4897-94E9-15660CB0DF2A', 'EA30.htm'],
-['A3569DA2-036F-A636-AA7E-810741CAA4E8', 'EA31.htm'],
-['BF40406B-15A1-8820-971F-9C7BDD8BA692', 'EA32.htm'],
-['876F7CFA-4D27-C7BE-8072-A3A7427EEFCC', 'EA33.htm'],
-['8278CC88-DB6D-4280-B16A-AE858E52D584', 'EA34.htm'],
+['DD27C372-9C0B-47C9-AF94-9D06D2A2E535', 'EA18.htm'],
+['E0F31230-05DC-4721-BB70-66EBBEBDDACC', 'EA19.htm'],
+['43C22E5C-704E-4949-94DE-B73FA440978F', 'EA20.htm'],
+['9B9FF987-CA6C-4BAE-9DCE-227135C932C6', 'EA21.htm'],
+['39E91508-C1F6-46F7-8629-BB4A2D97D7A2', 'EA22.htm'],
+['7DE1F6CD-850D-48E5-9D71-26CD3773CFDD', 'EA23.htm'],
+['BE2845B0-93CA-4F13-996E-3C72E9BA6692', 'EA24.htm'],
+['94BFFFF4-C19F-48F2-B4C6-BEFB75C2EFCA', 'EA25.htm'],
+['53CB0382-F99B-4703-8174-F88AF9C7A2CA', 'EA26.htm'],
+['B760F51B-EAFE-433F-928F-5DD2FB4CF529', 'EA27.htm'],
+['0D8A0F23-3B65-4553-B8AF-DFDC45AA530C', 'EA28.htm'],
+['47D6BF51-142E-4659-B4A7-6CA857543EB9', 'EA29.htm'],
+['A181BDE1-3D78-47CD-8819-9FB87340ACFE', 'EA30.htm'],
+['528E0360-F6BC-43C9-B127-2603DE475FE8', 'EA31.htm'],
+['2788C524-B490-4FBE-90D6-405E5BA3F285', 'EA32.htm'],
+['2161C3E0-1984-472E-94BA-717A3C87E769', 'EA33.htm'],
+['334E0D6B-448D-4373-9DCD-EF6562933999', 'EA34.htm'],
+['B8F1BADF-4E1C-2186-919C-9794F3742BCA', 'EA35.htm'],
+['8B7873BA-DFCE-C23A-941A-F9908D0371E2', 'EA36.htm'],
+['B2915B26-B2B8-4897-94E9-15660CB0DF2A', 'EA37.htm'],
+['A3569DA2-036F-A636-AA7E-810741CAA4E8', 'EA38.htm'],
+['BF40406B-15A1-8820-971F-9C7BDD8BA692', 'EA39.htm'],
+['876F7CFA-4D27-C7BE-8072-A3A7427EEFCC', 'EA40.htm'],
+['8278CC88-DB6D-4280-B16A-AE858E52D584', 'EA41.htm'],
+['FF54B280-91B6-41E0-A707-031872ECC2C6', 'EA1/EA42.htm'],
+['DD27C372-9C0B-47C9-AF94-9D06D2A2E535', 'EA1/EA44.htm'],
+['2DACB836-39B6-4F24-B8C3-BD09D022A08E', 'EA1/EA45.htm'],
+['29CF61C8-3937-46EC-AB83-65D9F27B6226', 'EA1/EA46.htm'],
+['FA4925C5-B2F1-4A74-841A-026FCBD7AB81', 'EA1/EA47.htm'],
+['7F9234D7-D11D-4D3F-ABB8-1CCF07B78310', 'EA1/EA48.htm'],
+['E86EC21B-9301-4E2E-9D74-112582B087A1', 'EA1/EA49.htm'],
+['D968A197-61CF-4069-9A23-AB26D96469AB', 'EA1/EA50.htm'],
+['6CB8EAA9-CCD8-4155-AFED-A3DBCB43360F', 'EA1/EA51.htm'],
+['301C4A74-C4F9-4CD9-81A6-19B950D68C3B', 'EA1/EA52.htm'],
+['80556B77-094E-4954-B8DB-A57F84988482', 'EA1/EA53.htm'],
+['8C6366B8-957A-498B-8E3E-8104D2B83533', 'EA1/EA54.htm'],
+['652390D2-8EAB-4F4F-98A0-FC67621ECDD2', 'EA1/EA55.htm'],
+['4C3CDDC8-2F87-451C-BA3B-DF97CF1260AC', 'EA1/EA56.htm'],
+['8A778258-3F05-4904-82F7-8BC1B72BACC8', 'EA1/EA57.htm'],
+['2DD6E708-3F7E-45E9-AD88-E6F808BEC783', 'EA1/EA58.htm'],
+['8B55D94B-4192-4D56-BD1D-78592D87EE6C', 'EA1/EA59.htm'],
+['E5490B40-CB3D-4928-8A0C-47B34066AB7B', 'EA1/EA60.htm'],
+['3B078049-AC03-45FC-924A-F52D93950E0C', 'EA1/EA61.htm'],
+['B4B22D2B-C5FD-4A7A-8B88-869A4FDE6262', 'EA1/EA62.htm'],
+['188424D8-E042-4CBD-A2F5-C9D80C78F117', 'EA1/EA63.htm'],
+['DE129623-17E4-4D99-ADB5-1AC871C1C860', 'EA1/EA64.htm'],
+['5E73153F-3C0B-4A72-BEE4-E4367C3BC6BD', 'EA1/EA65.htm'],
+['F9414C6C-ADC4-4473-B7D5-0A2D40EA2426', 'EA1/EA66.htm'],
+['8056BB4A-975A-4A33-A7D1-840555165207', 'EA1/EA67.htm'],
+['33E38ABE-7FB2-43F7-9F9A-86236D6B4692', 'EA1/EA68.htm'],
+['D68A794C-2D19-4FED-AC49-4621F67A338C', 'EA1/EA69.htm'],
+['053FDB80-1EEC-4241-AE97-A91B3F87B4A3', 'EA1/EA70.htm'],
+['61A57163-AE62-4239-AD61-E50FC7F8DED0', 'EA1/EA71.htm'],
+['48147C0C-984D-4FBF-BEE6-0B7F594E5B7D', 'EA1/EA72.htm'],
 ]);
 
 		function switchProjectProperties()
@@ -175,35 +213,39 @@ const guid_look = new Map([['0B788218-1194-44F2-B62F-974CACF92E6C', 'EA1.htm'],
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<li><img src="images/175.png" alt="Diagram"/> <a href="./EARoot/EA1.htm">Generalisaties</a></li>
-<li><img src="images/175.png" alt="Diagram"/> <a href="./EARoot/EA3.htm">Lifecycle Model</a></li>
-<li><img src="images/175.png" alt="Diagram"/> <a href="./EARoot/EA5.htm">PDCA - Conceptuele view</a></li>
-<li><img src="images/175.png" alt="Diagram"/> <a href="./EARoot/EA7.htm">PDCA - Logisch datamodel</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA10.htm">BusinessObject</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA11.htm">BusinessObjectMetadata</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA12.htm">BusinessObjectState</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA13.htm">BusinessObjectType</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA14.htm">BusinessObjectTypeMetadata</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA15.htm">BusinessObjectTypeState</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA28.htm">Configuratie</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA29.htm">Doel</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA30.htm">Doeltype</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA31.htm">Domein</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA32.htm">Evaluatie</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA18.htm">Evaluatietype</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA19.htm">Plan</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA20.htm">Positie</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA21.htm">Positietype</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA23.htm">Subdoel</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA24.htm">Subdoeltype</a></li>
-<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA25.htm">Subject</a></li>
+<li><img src="images/4.png" alt="Package"/> <a href="./EARoot/EA1/EA44.htm">DDL</a></li>
+<li><img src="images/175.png" alt="Diagram"/> <a href="./EARoot/EA1.htm">Lifecycle Model</a></li>
+<li><img src="images/175.png" alt="Diagram"/> <a href="./EARoot/EA3.htm">PDCA - Conceptuele view</a></li>
+<li><img src="images/175.png" alt="Diagram"/> <a href="./EARoot/EA5.htm">PDCA - Logisch datamodel</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA9.htm">BusinessObject</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA10.htm">BusinessObjectMetadata</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA11.htm">BusinessObjectState</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA12.htm">BusinessObjectType</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA13.htm">BusinessObjectTypeMetadata</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA14.htm">BusinessObjectTypeState</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA35.htm">Configuratie</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA15.htm">Contactmoment</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA36.htm">Doel</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA37.htm">Doeltype</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA38.htm">Domein</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA39.htm">Evaluatie</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA22.htm">Evaluatietype</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA23.htm">Object</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA24.htm">Partij</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA25.htm">Plan</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA26.htm">Positie</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA27.htm">Positietype</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA28.htm">Product</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA30.htm">Subdoel</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA31.htm">Subdoeltype</a></li>
+<li><img src="images/5.png" alt="Class"/> <a href="./EARoot/EA32.htm">Subject</a></li>
 <li><img src="images/230.png" alt="DataType"/> <a href="./EARoot/EA16.htm">Date</a></li>
 <li><img src="images/230.png" alt="DataType"/> <a href="./EARoot/EA17.htm">DateTime</a></li>
-<li><img src="images/247.png" alt="Enumeration"/> <a href="./EARoot/EA22.htm">RedenWijziging</a></li>
-<li><img src="images/247.png" alt="Enumeration"/> <a href="./EARoot/EA33.htm">Resultaat</a></li>
-<li><img src="images/247.png" alt="Enumeration"/> <a href="./EARoot/EA34.htm">Status</a></li>
-<li><img src="images/230.png" alt="DataType"/> <a href="./EARoot/EA26.htm">URN</a></li>
-<li><img src="images/230.png" alt="DataType"/> <a href="./EARoot/EA27.htm">UUID</a></li>
+<li><img src="images/247.png" alt="Enumeration"/> <a href="./EARoot/EA29.htm">RedenWijziging</a></li>
+<li><img src="images/247.png" alt="Enumeration"/> <a href="./EARoot/EA40.htm">Resultaat</a></li>
+<li><img src="images/247.png" alt="Enumeration"/> <a href="./EARoot/EA41.htm">Status</a></li>
+<li><img src="images/230.png" alt="DataType"/> <a href="./EARoot/EA33.htm">URN</a></li>
+<li><img src="images/230.png" alt="DataType"/> <a href="./EARoot/EA34.htm">UUID</a></li>
 </ul>
 
 					</td>
@@ -214,24 +256,32 @@ const guid_look = new Map([['0B788218-1194-44F2-B62F-974CACF92E6C', 'EA1.htm'],
 						</div>
 						<div class="PageBody">
 	<div class="diagram_image"> 
-<img src="./EARoot/EA8.png" usemap="#EA8" width="1878" height="1682" border="0" />
+<img src="./EARoot/EA6.png" usemap="#EA6" width="2477" height="1881" border="0" />
 
-<MAP NAME="EA8">
-<area shape="rect" coords="71,407,329,612" href="./EARoot/EA22.htm" target="_self">
-<area shape="rect" coords="1604,47,1862,281" href="./EARoot/EA31.htm" target="_self">
-<area shape="rect" coords="66,246,324,363" href="./EARoot/EA34.htm" target="_self">
-<area shape="rect" coords="66,47,326,203" href="./EARoot/EA33.htm" target="_self">
-<area shape="rect" coords="1604,407,1862,681" href="./EARoot/EA18.htm" target="_self">
-<area shape="rect" coords="846,15,1104,312" href="./EARoot/EA28.htm" target="_self">
-<area shape="rect" coords="1604,1280,1863,1659" href="./EARoot/EA32.htm" target="_self">
-<area shape="rect" coords="846,408,1104,681" href="./EARoot/EA30.htm" target="_self">
-<area shape="rect" coords="846,792,1104,1238" href="./EARoot/EA29.htm" target="_self">
-<area shape="rect" coords="1224,408,1482,681" href="./EARoot/EA24.htm" target="_self">
-<area shape="rect" coords="474,408,732,681" href="./EARoot/EA21.htm" target="_self">
-<area shape="rect" coords="15,792,278,1035" href="./EARoot/EA25.htm" target="_self">
-<area shape="rect" coords="1220,792,1478,1238" href="./EARoot/EA23.htm" target="_self">
-<area shape="rect" coords="473,792,731,1238" href="./EARoot/EA20.htm" target="_self">
-<area shape="rect" coords="473,1311,731,1667" href="./EARoot/EA19.htm" target="_self">
+<MAP NAME="EA6">
+<area shape="rect" coords="21,30,579,236" href="./EARoot/EA8.htm" target="_self">
+<area shape="rect" coords="90,1688,225,1793" href="./EARoot/EA23.htm" target="_self">
+<area shape="rect" coords="477,1688,612,1793" href="./EARoot/EA24.htm" target="_self">
+<area shape="rect" coords="773,1688,1028,1793" href="./EARoot/EA15.htm" target="_self">
+<area shape="rect" coords="2151,933,2409,1092" href="./EARoot/EA28.htm" target="_self">
+<area shape="rect" coords="183,653,441,858" href="./EARoot/EA29.htm" target="_self">
+<area shape="rect" coords="1665,38,1923,291" href="./EARoot/EA38.htm" target="_self">
+<area shape="rect" coords="183,486,441,603" href="./EARoot/EA41.htm" target="_self">
+<area shape="rect" coords="183,296,443,452" href="./EARoot/EA40.htm" target="_self">
+<area shape="rect" coords="1773,474,2030,680" href="./EARoot/EA22.htm" target="_self">
+<area shape="rect" coords="986,15,1244,312" href="./EARoot/EA35.htm" target="_self">
+<area shape="rect" coords="1770,1247,2031,1559" href="./EARoot/EA39.htm" target="_self">
+<area shape="rect" coords="1016,474,1275,680" href="./EARoot/EA37.htm" target="_self">
+<area shape="rect" coords="1016,858,1274,1169" href="./EARoot/EA36.htm" target="_self">
+<area shape="rect" coords="1391,474,1649,680" href="./EARoot/EA31.htm" target="_self">
+<area shape="rect" coords="645,474,903,680" href="./EARoot/EA27.htm" target="_self">
+<area shape="rect" coords="182,926,446,1169" href="./EARoot/EA32.htm" target="_self">
+<area shape="rect" coords="1391,858,1649,1169" href="./EARoot/EA30.htm" target="_self">
+<area shape="rect" coords="644,858,902,1169" href="./EARoot/EA26.htm" target="_self">
+<area shape="rect" coords="644,1284,900,1559" href="./EARoot/EA25.htm" target="_self">
+<area shape="rect" coords="435,1620,1092,1866" href="./EARoot/EA20.htm" target="_self">
+<area shape="rect" coords="2093,870,2462,1155" href="./EARoot/EA21.htm" target="_self">
+<area shape="rect" coords="15,1620,300,1866" href="./EARoot/EA19.htm" target="_self">
 </MAP>
  </div>
 	<div class="ObjectTitle">PDCA - Logisch datamodel : Class diagram</div>
@@ -242,7 +292,7 @@ const guid_look = new Map([['0B788218-1194-44F2-B62F-974CACF92E6C', 'EA1.htm'],
 		</tr>
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
-			<td width="85%" class="ObjectDetailsValue">9-10-2026 15:17:10</td>
+			<td width="85%" class="ObjectDetailsValue">22-10-2026 16:41:51</td>
 		</tr>
 		<tr style="padding-top: 10px;">
 			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="./images//plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>

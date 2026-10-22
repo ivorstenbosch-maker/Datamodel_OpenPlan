@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Tables::heeft</title>
+<title>DDL::Contactmoment</title>
 <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -90,12 +90,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Tables::heeft </h1>
+			<h1> DDL::Contactmoment </h1>
 			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../EA7.htm">Logisch datamodel (LDM)</a> / <a href="EA37.htm">Tables</a> / <a href="EA52.htm">heeft</a></p>
+			<p><a href="../EA7.htm">Datamodel</a> / <a href="EA44.htm">DDL</a> / <a href="EA52.htm">Contactmoment</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -110,20 +110,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA37.htm">Tables</a></ul>
+<a href="EA44.htm">DDL</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">heeft  : Public  &lt;&lt;table&gt;&gt; Table</span>
+	<span class="ObjectTitle">Contactmoment  : Public  &lt;&lt;table&gt;&gt; Table</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">24-9-2026 15:47:02</td>
+			<td width="85%" class="ObjectDetailsValue">22-10-2026 11:30:27</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">24-9-2026 15:47:02</td>
+			<td class="ObjectDetailsValue">22-10-2026 11:30:27</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -168,11 +168,11 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{A831E327-17FE-4e43-8852-F078C388E90A}</td>
+			<td class="ObjectDetailsValue">{301C4A74-C4F9-4cd9-81A6-19B950D68C3B}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA35.htm">Tables</a></td>
+			<td class="ObjectDetailsValue"><a href="EA42.htm">DDL</a></td>
 		</tr>
 	</table>
 	
@@ -192,7 +192,7 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					<a name="{1E1528E6-897D-4554-882C-C16BC455C6B6}"></a>PlanID
+					<a name="{FE09B421-CE68-4044-8DAE-7D5BA79DB03C}"></a>ContactmomentID
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -209,7 +209,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{F6AED8C7-8C3F-42fb-BCED-78EA536A5199}"></a>SubjectID
+					<a name="{349DB691-27AC-4674-A44B-980A7ABE232F}"></a>EvaluatieID
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -235,14 +235,14 @@
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{9BACCDC4-77D0-49f4-A188-28551A9CFC47}"></a><strong>FK_heeft_Plan</strong> (PlanID: integer, 
+					<a name="{9F428954-FD7D-4d83-AF63-0180714AFE2C}"></a><strong>PK_Contactmoment</strong> (ContactmomentID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations340" class="DetailsDiv" >
+						<div id="detailsDIVOperations325" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -252,14 +252,14 @@
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{353B4474-604C-4bb9-B347-5458A9A10A49}"></a><strong>FK_heeft_Subject</strong> (SubjectID: integer, 
+					<a name="{7CA1FB2F-DD5D-4a07-9974-CC398A2C67E7}"></a><strong>FK_Contactmoment_verwijst naar</strong> (EvaluatieID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations341" class="DetailsDiv" >
+						<div id="detailsDIVOperations326" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -277,45 +277,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA63.htm">«table» Subject</a><br />
+						<a href="EA58.htm">«table» Evaluatie</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_heeft_Subject<br />
+						<strong>Name:</strong> FK_Contactmoment_verwijst naar<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Subject<br />
+						<strong>Name:</strong> PK_Evaluatie<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink342" /></button>Details:
-							<div id="detailsDIVLink342" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA56.htm">«table» Plan</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_heeft_Plan<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Plan<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink343" /></button>Details:
-							<div id="detailsDIVLink343" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink327" /></button>Details:
+							<div id="detailsDIVLink327" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Tables::Evaluatietype</title>
+<title>DDL::Configuratie</title>
 <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -90,12 +90,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Tables::Evaluatietype </h1>
+			<h1> DDL::Configuratie </h1>
 			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../EA7.htm">Logisch datamodel (LDM)</a> / <a href="EA37.htm">Tables</a> / <a href="EA51.htm">Evaluatietype</a></p>
+			<p><a href="../EA7.htm">Datamodel</a> / <a href="EA44.htm">DDL</a> / <a href="EA51.htm">Configuratie</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -110,20 +110,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA37.htm">Tables</a></ul>
+<a href="EA44.htm">DDL</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Evaluatietype  : Public  &lt;&lt;table&gt;&gt; Table</span>
+	<span class="ObjectTitle">Configuratie  : Public  &lt;&lt;table&gt;&gt; Table</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">24-9-2026 15:47:02</td>
+			<td width="85%" class="ObjectDetailsValue">22-10-2026 11:30:27</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">24-9-2026 15:47:02</td>
+			<td class="ObjectDetailsValue">22-10-2026 11:30:27</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -168,14 +168,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{6C1C6A09-9B76-4a26-92EC-909CDF15943B}</td>
+			<td class="ObjectDetailsValue">{6CB8EAA9-CCD8-4155-AFED-A3DBCB43360F}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA35.htm">Tables</a></td>
+			<td class="ObjectDetailsValue"><a href="EA42.htm">DDL</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">De vooraf binnen een domeincontext geconfigureerde evaluaties die gebruikt kunnen worden in een plan.&lt;br/&gt;&lt;br/&gt;Een evaluatie is een gebeurtenis waarin de voortgang en actualiteit van een plan worden besproken en waarin, indien nodig, inhoudelijke elementen van het plan worden bijgewerkt. Een evaluatie verwijst optioneel naar Contactmoment. Mogelijke typen zijn (bijvoorbeeld:) &#8216;Intake&#8217;, &#8216;Tussentijds&#8217; en &#8216;Eindevaluatie&#8217;. Dit geeft extra structuur aan de tijdlijn. &lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">De vooraf binnen een domeincontext geconfigureerde typen binnen het plan die gebruikt kunnen worden om te specialiseren binnen een domein. &lt;br/&gt;Een configuratie is het aggregaat van typen (posities, doelen subdoelen etc.) die voor een domein zijn ingericht binnen OpenPlan. Voor het domein Werkdienstverlening/participatie aggregeert dit posities als &#8216;Klaar voor de arbeidsmarkt&#8217;, Doelen als &#8216;Match op vacature&#8217; etc. &lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -194,7 +194,88 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					<a name="{C5F979F4-37D2-4956-B981-6BF67511E101}"></a>EvaluatietypeID
+					<a name="{815AFAF9-C7C1-4cba-90E3-DF3885EB20F9}"></a>Identificatie
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					uuid
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Unieke identificatie waarmee het bedrijfsobject eenduidig kan worden herkend.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{8983F870-2EA5-4001-B7CB-B65E99E85639}"></a>Naam
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					varchar(50)
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Naam van de configuratie, bijvoorbeeld &#39;Werkdienstverlening&#39;. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{35D64922-CABE-436f-AB1D-69ACEBD1EBE8}"></a>Omschrijving
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					varchar(50)
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Context bij de configuratie.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{8DD46368-21E3-4df6-B925-01352EFF935E}"></a>ConfiguratieID
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -211,7 +292,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{F9ADF6D6-7F2F-4696-B630-DF4F864F5E36}"></a>ConfiguratieID
+					<a name="{A6B460C8-41F4-421d-BEEF-292985FF0300}"></a>DomeinID
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -237,14 +318,14 @@
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{8F1D5A82-F8E6-4cf3-A9A0-E2FEA0EAA8C2}"></a><strong>PK_Evaluatietype</strong> (EvaluatietypeID: integer, 
+					<a name="{EAB8CE4A-A941-4cb9-857A-6DBD5D7ADADB}"></a><strong>PK_Configuratie</strong> (ConfiguratieID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations332" class="DetailsDiv" >
+						<div id="detailsDIVOperations314" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -254,14 +335,14 @@
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{D56EE998-C71E-4678-916E-EA35C887DBCF}"></a><strong>FK_Evaluatietype_BusinessObjectType</strong> (EvaluatietypeID: integer, 
+					<a name="{D9CBA9A2-7B82-446f-9B18-BCB4760D1859}"></a><strong>FK_Configuratie_BusinessObjectState</strong> (ConfiguratieID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations333" class="DetailsDiv" >
+						<div id="detailsDIVOperations315" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -271,14 +352,14 @@
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{761E99F0-67DE-4785-A6B5-9F8E32B7C8F8}"></a><strong>FK_Evaluatietype_legt vast</strong> (ConfiguratieID: integer, 
+					<a name="{48B447D7-57EC-4521-8EAF-B5DA218F788B}"></a><strong>FK_Configuratie_hoort bij</strong> (DomeinID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations334" class="DetailsDiv" >
+						<div id="detailsDIVOperations316" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -296,22 +377,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA41.htm">«table» Businessobjecttype</a><br />
+						<a href="EA57.htm">«table» Domein</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Evaluatietype_BusinessObjectType<br />
+						<strong>Name:</strong> FK_Configuratie_hoort bij<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Businessobjecttype<br />
+						<strong>Name:</strong> PK_Domein<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink335" /></button>Details:
-							<div id="detailsDIVLink335" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink317" /></button>Details:
+							<div id="detailsDIVLink317" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -319,22 +400,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA44.htm">«table» Configuratie</a><br />
+						<a href="EA47.htm">«table» Businessobjectstate</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Evaluatietype_legt vast<br />
+						<strong>Name:</strong> FK_Configuratie_BusinessObjectState<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Configuratie<br />
+						<strong>Name:</strong> PK_Businessobjectstate<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink336" /></button>Details:
-							<div id="detailsDIVLink336" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink318" /></button>Details:
+							<div id="detailsDIVLink318" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -352,22 +433,91 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA50.htm">«table» Evaluatie</a><br />
+						<a href="EA59.htm">«table» Evaluatietype</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Evaluatie_typeert<br />
+						<strong>Name:</strong> FK_Evaluatietype_legt vast<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Evaluatietype<br />
+						<strong>Name:</strong> PK_Configuratie<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink337" /></button>Details:
-							<div id="detailsDIVLink337" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink319" /></button>Details:
+							<div id="detailsDIVLink319" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA62.htm">«table» legt vast</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_legt vast_Configuratie<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_Configuratie<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink320" /></button>Details:
+							<div id="detailsDIVLink320" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA61.htm">«table» legt vast</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_legt vast_Configuratie<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_Configuratie<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink321" /></button>Details:
+							<div id="detailsDIVLink321" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA60.htm">«table» legt vast</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_legt vast_Configuratie<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_Configuratie<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink322" /></button>Details:
+							<div id="detailsDIVLink322" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

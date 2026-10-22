@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Tables::Doel</title>
+<title>DDL::Businessobjectstate</title>
 <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -90,12 +90,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Tables::Doel </h1>
+			<h1> DDL::Businessobjectstate </h1>
 			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../EA7.htm">Logisch datamodel (LDM)</a> / <a href="EA37.htm">Tables</a> / <a href="EA47.htm">Doel</a></p>
+			<p><a href="../EA7.htm">Datamodel</a> / <a href="EA44.htm">DDL</a> / <a href="EA47.htm">Businessobjectstate</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -110,20 +110,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA37.htm">Tables</a></ul>
+<a href="EA44.htm">DDL</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Doel  : Public  &lt;&lt;table&gt;&gt; Table</span>
+	<span class="ObjectTitle">Businessobjectstate  : Public  &lt;&lt;table&gt;&gt; Table</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">24-9-2026 15:47:02</td>
+			<td width="85%" class="ObjectDetailsValue">22-10-2026 11:30:26</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">24-9-2026 15:47:02</td>
+			<td class="ObjectDetailsValue">22-10-2026 11:30:26</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -168,14 +168,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{12405F57-5273-49bb-A117-10B8108C939F}</td>
+			<td class="ObjectDetailsValue">{FA4925C5-B2F1-4a74-841A-026FCBD7AB81}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA35.htm">Tables</a></td>
+			<td class="ObjectDetailsValue"><a href="EA42.htm">DDL</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Een doel is een gewenste situatie of uitkomst die met een plan wordt nagestreefd.&lt;br/&gt;&lt;br/&gt;Een doel beschrijft wat met de dienstverlening of ontwikkeling moet worden bereikt. Een doel geeft daarmee richting aan de inzet van instrumenten en activiteiten. Een doel beschrijft de gewenste uitkomst en is daarmee iets anders dan een activiteit, instrument, resultaat of effect. Een doel kan worden uitgewerkt in &#233;&#233;n of meer subdoelen.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Een ObjectState beschrijft de bedrijfsinhoudelijke toestand waarin een BusinessObject zich gedurende een bepaalde periode bevindt. De state geeft aan welke fase of status van de levenscyclus van het BusinessObject van toepassing is.&lt;br/&gt;&lt;br/&gt;Een BusinessObject kan gedurende zijn levenscyclus meerdere states doorlopen. Een state kan worden gekoppeld aan een specifieke versie van het BusinessObject en wordt vastgelegd met de relevante metadata over de geldigheid en totstandkoming van deze toestand.&lt;br/&gt;&lt;br/&gt;ObjectState is een generiek concept. De concrete waarden en toegestane overgangen tussen states worden bepaald door het betreffende bedrijfsdomein en kunnen per type BusinessObject verschillen.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -194,7 +194,7 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					<a name="{3C20D922-8FC7-4a34-B716-A95474D76A16}"></a>Resultaat
+					<a name="{ECC89B85-821B-46d1-8B16-1678ED67CF64}"></a>Eigenaar
 				</td>
 				<td width="25%" class="TableRow">
 					Private 
@@ -206,29 +206,22 @@
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			de eigenaar van het bedrijfsobject. In de regel de aanmaker van de state, dus een persoon, met een URN-verwijzing naar Open Organisatie.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{C2252047-D48E-4a90-A558-C774DEAE91D3}"></a>Toelichtingmedewerker
-				</td>
-				<td width="25%" class="TableRow">
-					Private 
-				</td>
-				<td width="25%" class="TableRow">
-					varchar(50)
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					<a name="{F40172AD-8AE7-4390-80BD-C59A453FF4A1}"></a>DoelID
+					<a name="{DF394333-7595-4c31-A1EE-DC60C8111A30}"></a>BusinessobjectstateID
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -245,24 +238,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{02677DF7-6EAE-4040-A962-438B53E1166B}"></a>PositieID
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					integer
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					<a name="{D19CA14C-CB3C-4cec-8046-C93F84056A01}"></a>DoeltypeID
+					<a name="{34AAD827-1479-434e-83D4-71811ED72D6E}"></a>BusinessobjectID
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -288,14 +264,14 @@
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{0BC26002-C106-4e02-AA15-6215ACCE09DD}"></a><strong>PK_Doel</strong> (DoelID: integer, 
+					<a name="{2AC7F65D-0F51-4e5b-ACB1-44BF161C0536}"></a><strong>PK_Businessobjectstate</strong> (BusinessobjectstateID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations282" class="DetailsDiv" >
+						<div id="detailsDIVOperations256" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -305,14 +281,14 @@
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{B61FC471-3AFE-4dc9-A8F2-7BDDD02E460F}"></a><strong>FK_Doel_BusinessObjectState</strong> (DoelID: integer, 
+					<a name="{1A1B6916-B676-4e9c-B614-0B841DD4C28E}"></a><strong>FK_BusinessObjectState_heeft</strong> (BusinessobjectID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations283" class="DetailsDiv" >
+						<div id="detailsDIVOperations257" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -322,14 +298,14 @@
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{2F604A91-56D7-4b76-89D9-9ACE3237E4F8}"></a><strong>FK_Doel_bepaalt</strong> (PositieID: integer, 
+					<a name="{4F266284-507B-400b-A0FB-B8C20ED59B00}"></a><strong>FK_BusinessObjectState_vorige state</strong> (BusinessobjectstateID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations284" class="DetailsDiv" >
+						<div id="detailsDIVOperations258" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -339,14 +315,14 @@
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{61835A26-A5CD-4dba-B29B-BF2BACC98FD8}"></a><strong>FK_Doel_typeert</strong> (DoeltypeID: integer, 
+					<a name="{A7D4C18E-765E-46dc-89B9-0928B2B4CB40}"></a><strong>FK_BusinessObjectState_BusinessObjectType</strong> (BusinessobjectstateID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations285" class="DetailsDiv" >
+						<div id="detailsDIVOperations259" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -364,11 +340,34 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA40.htm">«table» Businessobjectstate</a><br />
+						<a href="EA45.htm">«table» Businessobject</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Doel_BusinessObjectState<br />
+						<strong>Name:</strong> FK_BusinessObjectState_heeft<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_Businessobject<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink260" /></button>Details:
+							<div id="detailsDIVLink260" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA47.htm">«table» Businessobjectstate</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_BusinessObjectState_vorige state<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -378,8 +377,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink286" /></button>Details:
-							<div id="detailsDIVLink286" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink261" /></button>Details:
+							<div id="detailsDIVLink261" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -387,45 +386,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA48.htm">«table» Doeltype</a><br />
+						<a href="EA48.htm">«table» Businessobjecttype</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Doel_typeert<br />
+						<strong>Name:</strong> FK_BusinessObjectState_BusinessObjectType<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Doeltype<br />
+						<strong>Name:</strong> PK_Businessobjecttype<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink287" /></button>Details:
-							<div id="detailsDIVLink287" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA57.htm">«table» Positie</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Doel_bepaalt<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Positie<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink288" /></button>Details:
-							<div id="detailsDIVLink288" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink262" /></button>Details:
+							<div id="detailsDIVLink262" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -443,22 +419,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA61.htm">«table» Subdoel</a><br />
+						<a href="EA70.htm">«table» Subject</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Subdoel_bepaalt<br />
+						<strong>Name:</strong> FK_Subject_BusinessObjectState<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Doel<br />
+						<strong>Name:</strong> PK_Businessobjectstate<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink289" /></button>Details:
-							<div id="detailsDIVLink289" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink263" /></button>Details:
+							<div id="detailsDIVLink263" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -466,22 +442,183 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA50.htm">«table» Evaluatie</a><br />
+						<a href="EA51.htm">«table» Configuratie</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Evaluatie_verwijst naar<br />
+						<strong>Name:</strong> FK_Configuratie_BusinessObjectState<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Doel<br />
+						<strong>Name:</strong> PK_Businessobjectstate<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink290" /></button>Details:
-							<div id="detailsDIVLink290" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink264" /></button>Details:
+							<div id="detailsDIVLink264" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA47.htm">«table» Businessobjectstate</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_BusinessObjectState_vorige state<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_Businessobjectstate<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink265" /></button>Details:
+							<div id="detailsDIVLink265" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA46.htm">«table» Businessobjectmetadata</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_BusinessObjectMetadata_heeft<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_Businessobjectstate<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink266" /></button>Details:
+							<div id="detailsDIVLink266" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA55.htm">«table» Doel</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_Doel_BusinessObjectState<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_Businessobjectstate<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink267" /></button>Details:
+							<div id="detailsDIVLink267" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA58.htm">«table» Evaluatie</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_Evaluatie_BusinessObjectState<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_Businessobjectstate<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink268" /></button>Details:
+							<div id="detailsDIVLink268" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA65.htm">«table» Positie</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_Positie_BusinessObjectState<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_Businessobjectstate<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink269" /></button>Details:
+							<div id="detailsDIVLink269" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA68.htm">«table» Subdoel</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_Subdoel_BusinessObjectState<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_Businessobjectstate<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink270" /></button>Details:
+							<div id="detailsDIVLink270" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA64.htm">«table» Plan</a><br />
+						Table «FK» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> FK_Plan_BusinessObjectState<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> PK_Businessobjectstate<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink271" /></button>Details:
+							<div id="detailsDIVLink271" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

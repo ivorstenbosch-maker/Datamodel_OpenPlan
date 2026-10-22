@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Tables::Doeltype</title>
+<title>DDL::Subject</title>
 <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -90,12 +90,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Tables::Doeltype </h1>
+			<h1> DDL::Subject </h1>
 			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../EA7.htm">Logisch datamodel (LDM)</a> / <a href="EA59.htm">Tables</a> / <a href="EA70.htm">Doeltype</a></p>
+			<p><a href="../EA7.htm">Datamodel</a> / <a href="EA44.htm">DDL</a> / <a href="EA70.htm">Subject</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -110,20 +110,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA59.htm">Tables</a></ul>
+<a href="EA44.htm">DDL</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Doeltype  : Public  &lt;&lt;table&gt;&gt; Table</span>
+	<span class="ObjectTitle">Subject  : Public  &lt;&lt;table&gt;&gt; Table</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">24-9-2026 15:47:02</td>
+			<td width="85%" class="ObjectDetailsValue">22-10-2026 11:30:27</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">24-9-2026 15:47:02</td>
+			<td class="ObjectDetailsValue">22-10-2026 11:30:27</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -168,14 +168,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{0183A7AC-8E96-4032-9FAC-A828DDA8248D}</td>
+			<td class="ObjectDetailsValue">{053FDB80-1EEC-4241-AE97-A91B3F87B4A3}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA57.htm">Tables</a></td>
+			<td class="ObjectDetailsValue"><a href="EA42.htm">DDL</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">De vooraf binnen een domeincontext geconfigureerde doeltypen die gebruikt kunnen worden in een plan.&lt;br/&gt;Voorbeeld (Werkdienstverlening): Herstel van stabiliteit en perspectief op een volgende stap.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Een persoon of andere entiteit waarop een positie, plan of vorm van dienstverlening betrekking heeft. Verwijst naar de basisregistratie van het objecttype, en optioneel naar de gemeentelijke registratie (bijvoorbeeld OpenKlant)&lt;br/&gt;&lt;br/&gt;Het subject is datgene waarop de positie betrekking heeft. In de context van Werk, Inburgering en het Sociaal Domein zal dit doorgaans een inwoner zijn. Door Subject als generiek begrip te hanteren, kan het model ook andere entiteiten omvatten indien dat vanuit de business nodig blijkt.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -194,41 +194,7 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					<a name="{8F8CB0E3-7A4A-4a13-9983-AAC975AB0D90}"></a>Toelichtinginwoner
-				</td>
-				<td width="25%" class="TableRow">
-					Private 
-				</td>
-				<td width="25%" class="TableRow">
-					varchar(50)
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					<a name="{E045E9FC-0CBE-40c6-9028-5CEF4FF503B1}"></a>Toelichtingmedewerker
-				</td>
-				<td width="25%" class="TableRow">
-					Private 
-				</td>
-				<td width="25%" class="TableRow">
-					varchar(50)
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					<a name="{28EA2BD5-BDAE-4e1f-A701-29503EBA8ADA}"></a>DoeltypeID
+					<a name="{0AA0776D-088C-43a3-809E-3CF910E49C80}"></a>SubjectID
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -245,7 +211,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{8099BEDE-A12C-47cf-91DF-4E1B74ADB004}"></a>PositietypeID
+					<a name="{778472B4-DE87-428a-B8CD-1D2C8EE86479}"></a>PartijID
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -271,14 +237,14 @@
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{2DA42072-A26A-414a-8E10-85AD02B59D88}"></a><strong>PK_Doeltype</strong> (DoeltypeID: integer, 
+					<a name="{BC57C5B8-FC7E-4128-B8A3-18C0CA4DBCCE}"></a><strong>PK_Subject</strong> (SubjectID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations301" class="DetailsDiv" >
+						<div id="detailsDIVOperations506" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -288,14 +254,14 @@
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{380474C5-2683-483c-829A-18E82170F65F}"></a><strong>FK_Doeltype_BusinessObjectType</strong> (DoeltypeID: integer, 
+					<a name="{877A2F0F-1571-4940-B967-0876012F7527}"></a><strong>FK_Subject_BusinessObjectState</strong> (SubjectID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations302" class="DetailsDiv" >
+						<div id="detailsDIVOperations507" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -305,14 +271,14 @@
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{7CF73785-7529-49c3-9716-3F3FA92EB563}"></a><strong>FK_Doeltype_bepaalt</strong> (PositietypeID: integer, 
+					<a name="{4F9EFEC8-1689-433d-8848-2F0A36762BFB}"></a><strong>FK_Subject_hoort bij</strong> (PartijID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations303" class="DetailsDiv" >
+						<div id="detailsDIVOperations508" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -330,22 +296,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA80.htm">«table» Positietype</a><br />
+						<a href="EA63.htm">«table» Partij</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Doeltype_bepaalt<br />
+						<strong>Name:</strong> FK_Subject_hoort bij<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Positietype<br />
+						<strong>Name:</strong> PK_Partij<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink304" /></button>Details:
-							<div id="detailsDIVLink304" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink509" /></button>Details:
+							<div id="detailsDIVLink509" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -353,22 +319,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA63.htm">«table» Businessobjecttype</a><br />
+						<a href="EA47.htm">«table» Businessobjectstate</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Doeltype_BusinessObjectType<br />
+						<strong>Name:</strong> FK_Subject_BusinessObjectState<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Businessobjecttype<br />
+						<strong>Name:</strong> PK_Businessobjectstate<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink305" /></button>Details:
-							<div id="detailsDIVLink305" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink510" /></button>Details:
+							<div id="detailsDIVLink510" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -386,22 +352,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA69.htm">«table» Doel</a><br />
+						<a href="EA65.htm">«table» Positie</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Doel_typeert<br />
+						<strong>Name:</strong> FK_Positie_heeft<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Doeltype<br />
+						<strong>Name:</strong> PK_Subject<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink306" /></button>Details:
-							<div id="detailsDIVLink306" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink511" /></button>Details:
+							<div id="detailsDIVLink511" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -409,45 +375,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA75.htm">«table» legt vast</a><br />
+						<a href="EA64.htm">«table» Plan</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_legt vast_Doeltype<br />
+						<strong>Name:</strong> FK_Plan_heeft<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Doeltype<br />
+						<strong>Name:</strong> PK_Subject<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink307" /></button>Details:
-							<div id="detailsDIVLink307" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA84.htm">«table» Subdoeltype</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Subdoeltype_bepaalt<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Doeltype<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink308" /></button>Details:
-							<div id="detailsDIVLink308" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink512" /></button>Details:
+							<div id="detailsDIVLink512" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

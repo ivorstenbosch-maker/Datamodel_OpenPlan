@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>BusinessObjectState</title>
+<title>BusinessObjectType</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -90,12 +90,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> BusinessObjectState </h1>
+			<h1> BusinessObjectType </h1>
 			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="EA9.htm">Datamodel</a> / <a href="EA12.htm">BusinessObjectState</a></p>
+			<p><a href="EA7.htm">Datamodel</a> / <a href="EA12.htm">BusinessObjectType</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -110,20 +110,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA9.htm">Datamodel</a></ul>
+<a href="EA7.htm">Datamodel</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">BusinessObjectState  : Public  &lt;&lt;Objecttype&gt;&gt; Class</span>
+	<span class="ObjectTitle">BusinessObjectType  : Public  &lt;&lt;Objecttype&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">20-9-2026 02:34:18</td>
+			<td width="85%" class="ObjectDetailsValue">20-9-2026 03:34:03</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">20-9-2026 13:21:53</td>
+			<td class="ObjectDetailsValue">20-9-2026 14:04:18</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -168,20 +168,19 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{6887F4ED-B72E-4763-B5F0-184217631989}</td>
+			<td class="ObjectDetailsValue">{88844300-763A-4b22-817B-C3352B1B12CC}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA3.htm">Lifecycle Model</a>, <a href="EA1.htm">Generalisaties</a></td>
+			<td class="ObjectDetailsValue"><a href="EA1.htm">Lifecycle Model</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Een ObjectState beschrijft de bedrijfsinhoudelijke toestand waarin een BusinessObject zich gedurende een bepaalde periode bevindt. De state geeft aan welke fase of status van de levenscyclus van het BusinessObject van toepassing is.&lt;br/&gt;&lt;br/&gt;Een BusinessObject kan gedurende zijn levenscyclus meerdere states doorlopen. Een state kan worden gekoppeld aan een specifieke versie van het BusinessObject en wordt vastgelegd met de relevante metadata over de geldigheid en totstandkoming van deze toestand.&lt;br/&gt;&lt;br/&gt;ObjectState is een generiek concept. De concrete waarden en toegestane overgangen tussen states worden bepaald door het betreffende bedrijfsdomein en kunnen per type BusinessObject verschillen.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Een BusinessObjectType vertegenwoordigt een uniek en identificeerbaar objectype binnen de bedrijfsvoering. Het vormt het generieke concept waaruit concrete BusinessObjects zijn afgeleid.&lt;br/&gt;&lt;br/&gt;Een BusinessObjecttype beschikt over een stabiele, persistente identiteit die gedurende de volledige levenscyclus van het object behouden blijft. De toestand van een BusinessObject kan in de tijd wijzigen. Iedere relevante wijziging kan worden vastgelegd als een afzonderlijke versie, met bijbehorende state- en metadata-informatie.&lt;br/&gt;&lt;br/&gt;Het BusinessObjectType-concept definieert daarmee de generieke structuur en levenscyclus van typen, onafhankelijk van de specifieke inhoudelijke eigenschappen van het betreffende type.&lt;br/&gt;&lt;br/&gt;Concrete objecttypen erven deze generieke kenmerken en voegen hun eigen attributen en relaties toe.&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent != null ? parent.toggleItem('Attributes') : toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent != null ? parent.toggleItem('AssociationsTo') : toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
-			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent != null ? parent.toggleItem('TaggedVal') : toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
@@ -195,13 +194,13 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					<a name="{4A14480D-8C38-44f3-A365-B27682589846}"></a>eigenaar
+					<a name="{8239B1EE-0E1E-4182-87EE-57310C03CE4D}"></a>identificatie
 				</td>
 				<td width="25%" class="TableRow">
 					Private 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="EA26.htm">URN</a>
+					UUID
 				</td>
 			</tr>
 			<tr>
@@ -213,7 +212,51 @@
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			de eigenaar van het bedrijfsobject. In de regel de aanmaker van de state, dus een persoon, met een URN-verwijzing naar Open Organisatie.&lt;br/&gt;
+			Unieke identificatie waarmee het bedrijfsobject eenduidig kan worden herkend.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{C641C76E-800C-4d6b-9E5A-A08AB2EF032E}"></a>naam
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					String
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{70AD6A45-DFC1-4364-8D1A-44D99F325E8E}"></a>status
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA41.htm">Status</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			De actuele administratieve status van het bedrijfsobject, bijvoorbeeld actief of be&#235;indigd.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -232,7 +275,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA12.htm">«Objecttype» BusinessObjectState</a><br />
+						<a href="EA14.htm">«Objecttype» BusinessObjectTypeState</a><br />
 						Class «Relatiesoort» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -246,87 +289,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink16" /></button>Details:
-							<div id="detailsDIVLink16" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA11.htm">«Objecttype» BusinessObjectMetadata</a><br />
-						Class «Relatiesoort» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink17" /></button>Details:
-							<div id="detailsDIVLink17" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-
-			</table>
-		</div>
-		<div class="ItemBody" id="AssociationsFromTable">
-			<table class="Table ea_table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA12.htm">«Objecttype» BusinessObjectState</a><br />
-						Class «Relatiesoort» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink18" /></button>Details:
-							<div id="detailsDIVLink18" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA10.htm">«Objecttype» BusinessObject</a><br />
-						Class «Relatiesoort» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink19" /></button>Details:
-							<div id="detailsDIVLink19" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink25" /></button>Details:
+							<div id="detailsDIVLink25" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -384,59 +348,10 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA25.htm">«Objecttype» Subject</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA11.htm">«Objecttype» BusinessObjectState</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA32.htm">«Objecttype» Evaluatie</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA29.htm">«Objecttype» Doel</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA23.htm">«Objecttype» Subdoel</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA20.htm">«Objecttype» Positie</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA19.htm">«Objecttype» Plan</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA28.htm">«Objecttype» Configuratie</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA13.htm">«Objecttype» BusinessObjectType</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 
