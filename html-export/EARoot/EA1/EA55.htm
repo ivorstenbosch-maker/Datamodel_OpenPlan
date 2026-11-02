@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>DDL::Doel</title>
+<title>DDL::Businessobjecttypestate</title>
 <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -90,12 +90,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> DDL::Doel </h1>
+			<h1> DDL::Businessobjecttypestate </h1>
 			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../EA7.htm">Datamodel</a> / <a href="EA44.htm">DDL</a> / <a href="EA55.htm">Doel</a></p>
+			<p><a href="../EA7.htm">Datamodel</a> / <a href="EA49.htm">DDL</a> / <a href="EA55.htm">Businessobjecttypestate</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -110,20 +110,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA44.htm">DDL</a></ul>
+<a href="EA49.htm">DDL</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Doel  : Public  &lt;&lt;table&gt;&gt; Table</span>
+	<span class="ObjectTitle">Businessobjecttypestate  : Public  &lt;&lt;table&gt;&gt; Table</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">22-10-2026 11:30:27</td>
+			<td width="85%" class="ObjectDetailsValue">22-10-2026 11:30:26</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">22-10-2026 11:30:27</td>
+			<td class="ObjectDetailsValue">22-10-2026 11:30:26</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -168,15 +168,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{652390D2-8EAB-4f4f-98A0-FC67621ECDD2}</td>
+			<td class="ObjectDetailsValue">{D968A197-61CF-4069-9A23-AB26D96469AB}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA42.htm">DDL</a></td>
+			<td class="ObjectDetailsValue"><a href="EA47.htm">DDL</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Een doel is een gewenste situatie of uitkomst die met een plan wordt nagestreefd.&lt;br/&gt;&lt;br/&gt;Een doel beschrijft wat met de dienstverlening of ontwikkeling moet worden bereikt. Een doel geeft daarmee richting aan de inzet van instrumenten en activiteiten. Een doel beschrijft de gewenste uitkomst en is daarmee iets anders dan een activiteit, instrument, resultaat of effect. Een doel kan worden uitgewerkt in &#233;&#233;n of meer subdoelen.&lt;br/&gt;</div>
-
+	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent != null ? parent.toggleItem('Attributes') : toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
@@ -194,13 +193,13 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					<a name="{B0E3EBD1-D8F6-41cd-A48F-926E7E0EC316}"></a>Beoogdeeinddatum
+					<a name="{0AC59B0E-61BE-4b46-A591-C165AD6A7BAD}"></a>Eigenaar
 				</td>
 				<td width="25%" class="TableRow">
 					Private 
 				</td>
 				<td width="25%" class="TableRow">
-					date
+					varchar(50)
 				</td>
 			</tr>
 			<tr>
@@ -212,7 +211,7 @@
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Moment waarop het vastgelegde bedrijfsobject wordt geacht voltooid te zijn. &lt;br/&gt;
+			de eigenaar van het bedrijfsobjecttype. In de regel de aanmaker van de state, dus een persoon, met een URN-verwijzing naar Open Organisatie.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -221,34 +220,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{7DD349AC-58AC-424f-BF37-A76FD931E407}"></a>Beoogdestartdatum
-				</td>
-				<td width="25%" class="TableRow">
-					Private 
-				</td>
-				<td width="25%" class="TableRow">
-					date
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Moment waarop het vastgelegde bedrijfsobject wordt geacht te starten. &lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					<a name="{E911893E-814F-4b24-A923-F816C5013139}"></a>Einddatum
+					<a name="{D3D3A600-1CF1-46a0-B6D5-AACA15F4C34F}"></a>Einddatum
 				</td>
 				<td width="25%" class="TableRow">
 					Private 
@@ -275,7 +247,34 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{870D7739-C6E6-4915-806A-3F71FDED4947}"></a>Redenwijziging
+					<a name="{B6E46E76-5556-464b-909B-41D24251A85C}"></a>Identificatie
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					uuid
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Unieke identificatie waarmee het bedrijfsobject eenduidig kan worden herkend.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{17B5D59D-0233-4381-8A88-96CA3315BB8D}"></a>Reden
 				</td>
 				<td width="25%" class="TableRow">
 					Private 
@@ -302,34 +301,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{60B87FB2-7E78-4740-B936-30F828E81804}"></a>Resultaat
-				</td>
-				<td width="25%" class="TableRow">
-					Private 
-				</td>
-				<td width="25%" class="TableRow">
-					varchar(50)
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			De inhoudelijke status van het object; wordt gezet door de medewerker. Verwijst naar enum &#39;Resultaat&#39; (behaald, niet behaald, actief). &lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					<a name="{B689F655-4308-42dc-9315-564C8A0C8DC8}"></a>Startdatum
+					<a name="{424F7CA5-B4FE-4589-B7BF-B277F8D09085}"></a>Startdatum
 				</td>
 				<td width="25%" class="TableRow">
 					Private 
@@ -347,7 +319,7 @@
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Feitelijke startdatum van het bedrijfsobject. &lt;br/&gt;&lt;br/&gt;
+			Moment waarop het vastgelegde bedrijfsobject actief wordt.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -356,7 +328,34 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{DC2530F3-9C46-456a-8BD1-E557696DA6BC}"></a>Toelichtingreden
+					<a name="{17375DFC-1271-4e4f-B586-2A064F539C66}"></a>Status
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					varchar(50)
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			De actuele administratieve status van het bedrijfsobject, bijvoorbeeld actief of be&#235;indigd.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{3CBA33A0-BAD8-4f6a-BE6D-86345D209573}"></a>Toelichtingreden
 				</td>
 				<td width="25%" class="TableRow">
 					Private 
@@ -383,7 +382,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{7C3D8EFE-DD22-4599-AA3C-BD953409F663}"></a>DoelID
+					<a name="{573D276C-5A8C-4af7-A587-6A30EFE02B9B}"></a>BusinessobjecttypestateID
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -400,24 +399,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{18F19346-C03B-4d17-A397-F20666212BA5}"></a>PositieID
-				</td>
-				<td width="25%" class="TableRow">
-					Public 
-				</td>
-				<td width="25%" class="TableRow">
-					integer
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="3">
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="50%" class="TableRow">
-					<a name="{4A9A99D8-85AE-45ee-9D59-DE39508F0DAF}"></a>DoeltypeID
+					<a name="{B7104EDD-5DE9-4160-8867-74A490B296AF}"></a>BusinessobjecttypeID
 				</td>
 				<td width="25%" class="TableRow">
 					Public 
@@ -443,14 +425,14 @@
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{052F3B30-DC19-4ee6-8746-0CB5BB6C4D35}"></a><strong>PK_Doel</strong> (DoelID: integer, 
+					<a name="{A156E394-9787-4ee1-BF67-A8EE9912D650}"></a><strong>PK_Businessobjecttypestate</strong> (BusinessobjecttypestateID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations342" class="DetailsDiv" >
+						<div id="detailsDIVOperations318" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -460,14 +442,14 @@
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{83D0D1A4-88F4-46cd-B5F0-6F1F46F0CF7D}"></a><strong>FK_Doel_BusinessObjectState</strong> (DoelID: integer, 
+					<a name="{995E5407-DD22-4473-9219-7DED6DEBE92A}"></a><strong>FK_BusinessObjectTypeState_heeft</strong> (BusinessobjecttypeID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations343" class="DetailsDiv" >
+						<div id="detailsDIVOperations319" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -477,48 +459,14 @@
 			<tr>
 				<td width="100%" class="TableRow">
 					<i>Public</i><br />
-					<a name="{A258C08A-07BD-4ace-854D-950A86A14305}"></a><strong>FK_Doel_bepaalt</strong> (PositieID: integer, 
+					<a name="{44E94B1F-7E5C-4e39-95E2-842ACF52888B}"></a><strong>FK_BusinessObjectTypeState_vorige state</strong> (BusinessobjecttypestateID: integer, 
 ) : 
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">
 					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations344" class="DetailsDiv" >
-					
-						</div>
-<div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<a name="{D3C3857C-A257-4d08-A86D-70191CE73C4A}"></a><strong>FK_Doel_typeert</strong> (DoeltypeID: integer, 
-) : 
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations345" class="DetailsDiv" >
-					
-						</div>
-<div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public</i><br />
-					<a name="{AA2D1784-B51E-4d32-9C7C-61FDFC9DAE18}"></a><strong>FK_Doel_Doeltype</strong> (DoelID: integer, 
-) : 
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">
-					<div class="DetailsDivParent">Details:</BR>
-						<div id="detailsDIVOperations346" class="DetailsDiv" >
+						<div id="detailsDIVOperations320" class="DetailsDiv" >
 					
 						</div>
 <div style="text-align: right">[ Is static False. Is abstract False. Is return array False. Is query False. Is synchronized False. ]</div>
@@ -536,22 +484,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA56.htm">«table» Doeltype</a><br />
+						<a href="EA53.htm">«table» Businessobjecttype</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Doel_typeert<br />
+						<strong>Name:</strong> FK_BusinessObjectTypeState_heeft<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Doeltype<br />
+						<strong>Name:</strong> PK_Businessobjecttype<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink347" /></button>Details:
-							<div id="detailsDIVLink347" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink321" /></button>Details:
+							<div id="detailsDIVLink321" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -559,68 +507,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA65.htm">«table» Positie</a><br />
+						<a href="EA55.htm">«table» Businessobjecttypestate</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Doel_bepaalt<br />
+						<strong>Name:</strong> FK_BusinessObjectTypeState_vorige state<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Positie<br />
+						<strong>Name:</strong> PK_Businessobjecttypestate<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink348" /></button>Details:
-							<div id="detailsDIVLink348" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA47.htm">«table» Businessobjectstate</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Doel_BusinessObjectState<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Businessobjectstate<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink349" /></button>Details:
-							<div id="detailsDIVLink349" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA56.htm">«table» Doeltype</a><br />
-						Table «FK» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Doel_Doeltype<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Doeltype<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink350" /></button>Details:
-							<div id="detailsDIVLink350" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink322" /></button>Details:
+							<div id="detailsDIVLink322" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -638,22 +540,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA58.htm">«table» Evaluatie</a><br />
+						<a href="EA54.htm">«table» Businessobjecttypemetadata</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Evaluatie_verwijst naar<br />
+						<strong>Name:</strong> FK_BusinessObjectTypeMetadata_heeft<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Doel<br />
+						<strong>Name:</strong> PK_Businessobjecttypestate<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink351" /></button>Details:
-							<div id="detailsDIVLink351" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink323" /></button>Details:
+							<div id="detailsDIVLink323" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -661,22 +563,22 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA68.htm">«table» Subdoel</a><br />
+						<a href="EA55.htm">«table» Businessobjecttypestate</a><br />
 						Table «FK» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> FK_Subdoel_bepaalt<br />
+						<strong>Name:</strong> FK_BusinessObjectTypeState_vorige state<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> PK_Doel<br />
+						<strong>Name:</strong> PK_Businessobjecttypestate<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink352" /></button>Details:
-							<div id="detailsDIVLink352" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink324" /></button>Details:
+							<div id="detailsDIVLink324" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

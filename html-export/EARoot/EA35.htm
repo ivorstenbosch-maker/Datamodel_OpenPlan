@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Configuratie</title>
+<title>Datamodel::Subject</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -90,12 +90,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Configuratie </h1>
+			<h1> Datamodel::Subject </h1>
 			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="EA7.htm">Datamodel</a> / <a href="EA35.htm">Configuratie</a></p>
+			<p><a href="EA7.htm">Datamodel</a> / <a href="EA35.htm">Subject</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -115,15 +115,15 @@
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Configuratie  : Public  &lt;&lt;Objecttype&gt;&gt; Class</span>
+	<span class="ObjectTitle">Subject  : Public  &lt;&lt;Objecttype&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">23-9-2026 19:12:08</td>
+			<td width="85%" class="ObjectDetailsValue">18-9-2026 16:45:19</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">24-9-2026 14:50:32</td>
+			<td class="ObjectDetailsValue">24-9-2026 14:47:12</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -168,14 +168,14 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{B8F1BADF-4E1C-2186-919C-9794F3742BCA}</td>
+			<td class="ObjectDetailsValue">{2788C524-B490-4fbe-90D6-405E5BA3F285}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA5.htm">PDCA - Logisch datamodel</a>, <a href="EA3.htm">PDCA - Conceptuele view</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">De vooraf binnen een domeincontext geconfigureerde typen binnen het plan die gebruikt kunnen worden om te specialiseren binnen een domein. &lt;br/&gt;Een configuratie is het aggregaat van typen (posities, doelen subdoelen etc.) die voor een domein zijn ingericht binnen OpenPlan. Voor het domein Werkdienstverlening/participatie aggregeert dit posities als &#8216;Klaar voor de arbeidsmarkt&#8217;, Doelen als &#8216;Match op vacature&#8217; etc. &lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Een persoon of andere entiteit waarop een positie, plan of vorm van dienstverlening betrekking heeft. Verwijst naar de basisregistratie van het objecttype, en optioneel naar de gemeentelijke registratie (bijvoorbeeld OpenKlant)&lt;br/&gt;&lt;br/&gt;Het subject is datgene waarop de positie betrekking heeft. In de context van Werk, Inburgering en het Sociaal Domein zal dit doorgaans een inwoner zijn. Door Subject als generiek begrip te hanteren, kan het model ook andere entiteiten omvatten indien dat vanuit de business nodig blijkt.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -193,83 +193,53 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					<a name="{E99FCC7D-0E92-4bef-AB24-DD0C475CE41E}"></a>identificatie
+					<a name="{430A0EAA-7DCA-4343-B29B-7619F6BE1693}"></a>BRK
 				</td>
 				<td width="25%" class="TableRow">
-					Private 
+					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					UUID
+					int
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Unieke identificatie waarmee het bedrijfsobject eenduidig kan worden herkend.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+					Indicatie classificerend=Nee<br>Mogelijk geen waarde=Nee<br>Patroon=<br>Toelichting=<br>
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{BA78EED4-5373-81D6-A0B3-7291464031FB}"></a>naam
+					<a name="{197A25AF-EFD4-4b79-80DA-32C853C5F6D4}"></a>BSN
 				</td>
 				<td width="25%" class="TableRow">
-					Private 
+					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					String
+					int
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Naam van de configuratie, bijvoorbeeld &#39;Werkdienstverlening&#39;. &lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+					Indicatie classificerend=Nee<br>Mogelijk geen waarde=Nee<br>Patroon=<br>Toelichting=<br>
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{19C9C86F-BC78-44b5-A739-46F7C60F9F7E}"></a>omschrijving
+					<a name="{975FF57E-406E-41d0-83E4-B23E1284CC34}"></a>Type
 				</td>
 				<td width="25%" class="TableRow">
-					Private 
+					Public 
 				</td>
 				<td width="25%" class="TableRow">
-					String
+					<a href="EA36.htm">SubjecType</a>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Context bij de configuratie.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+					Indicatie classificerend=Nee<br>Mogelijk geen waarde=Nee<br>Patroon=<br>Toelichting=<br>
+						&nbsp;
 						
 				</td>
 			</tr>
@@ -284,7 +254,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA31.htm">«Objecttype» Subdoeltype</a><br />
+						<a href="EA27.htm">«Objecttype» Partij</a><br />
 						Class «Relatiesoort» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -298,8 +268,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink168" /></button>Details:
-							<div id="detailsDIVLink168" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink163" /></button>Details:
+							<div id="detailsDIVLink163" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -307,7 +277,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA38.htm">«Objecttype» Domein</a><br />
+						<a href="EA26.htm">«Objecttype» Object</a><br />
 						Class «Relatiesoort» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -321,8 +291,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink169" /></button>Details:
-							<div id="detailsDIVLink169" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink164" /></button>Details:
+							<div id="detailsDIVLink164" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -330,7 +300,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA22.htm">«Objecttype» Evaluatietype</a><br />
+						<a href="EA29.htm">«Objecttype» Positie</a><br />
 						Class «Relatiesoort» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -344,8 +314,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink170" /></button>Details:
-							<div id="detailsDIVLink170" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink165" /></button>Details:
+							<div id="detailsDIVLink165" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -353,7 +323,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA27.htm">«Objecttype» Positietype</a><br />
+						<a href="EA28.htm">«Objecttype» Plan</a><br />
 						Class «Relatiesoort» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -367,31 +337,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink171" /></button>Details:
-							<div id="detailsDIVLink171" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA37.htm">«Objecttype» Doeltype</a><br />
-						Class «Relatiesoort» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink172" /></button>Details:
-							<div id="detailsDIVLink172" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink166" /></button>Details:
+							<div id="detailsDIVLink166" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -408,7 +355,7 @@
 		</tr>
 					<tr>
 				<td width="50%" class="TableRow" valign="top">Begrip</td>
-				<td width="50%" class="TableRow" valign="top">De vooraf binnen een domeincontext geconfigureerde typen binnen het plan die gebruikt kunnen worden om te specialiseren binnen een domein. </td>
+				<td width="50%" class="TableRow" valign="top">Een persoon of andere entiteit waarop een positie, plan of vorm van dienstverlening betrekking heeft. Verwijst naar de basisregistratie van het objecttype, en optioneel naar de gemeentelijke registratie (bijvoorbeeld OpenKlant)</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
@@ -437,7 +384,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">Toelichting</td>
-				<td width="50%" class="TableRow" valign="top">Een configuratie is het aggregaat van typen (posities, doelen subdoelen etc.) die voor een domein zijn ingericht binnen OpenPlan. Voor het domein Werkdienstverlening/participatie aggregeert dit posities als ‘Klaar voor de arbeidsmarkt’, Doelen als ‘Match op vacature’ etc. </td>
+				<td width="50%" class="TableRow" valign="top">Het subject is datgene waarop de positie betrekking heeft. In de context van Werk, Inburgering en het Sociaal Domein zal dit doorgaans een inwoner zijn. Door Subject als generiek begrip te hanteren, kan het model ook andere entiteiten omvatten indien dat vanuit de business nodig blijkt.</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
