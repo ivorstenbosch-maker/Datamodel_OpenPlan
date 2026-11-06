@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Datamodel::Subject</title>
+<title>Subdoel</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -90,12 +90,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Datamodel::Subject </h1>
+			<h1> Subdoel </h1>
 			<!-- <img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="EA7.htm">Datamodel</a> / <a href="EA35.htm">Subject</a></p>
+			<p><a href="EA7.htm">Datamodel</a> / <a href="EA35.htm">Subdoel</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -115,15 +115,15 @@
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Subject  : Public  &lt;&lt;Objecttype&gt;&gt; Class</span>
+	<span class="ObjectTitle">Subdoel  : Public  &lt;&lt;Objecttype&gt;&gt; Class</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">18-9-2026 16:45:19</td>
+			<td width="85%" class="ObjectDetailsValue">18-9-2026 16:45:32</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">24-9-2026 14:47:12</td>
+			<td class="ObjectDetailsValue">20-9-2026 13:51:18</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -168,19 +168,20 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{2788C524-B490-4fbe-90D6-405E5BA3F285}</td>
+			<td class="ObjectDetailsValue">{A181BDE1-3D78-47cd-8819-9FB87340ACFE}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA5.htm">PDCA - Logisch datamodel</a>, <a href="EA3.htm">PDCA - Conceptuele view</a></td>
+			<td class="ObjectDetailsValue"><a href="EA5.htm">PDCA - Logisch datamodel</a>, <a href="EA3.htm">PDCA - Conceptuele view</a>, Relaties</td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Een persoon of andere entiteit waarop een positie, plan of vorm van dienstverlening betrekking heeft. Verwijst naar de basisregistratie van het objecttype, en optioneel naar de gemeentelijke registratie (bijvoorbeeld OpenKlant)&lt;br/&gt;&lt;br/&gt;Het subject is datgene waarop de positie betrekking heeft. In de context van Werk, Inburgering en het Sociaal Domein zal dit doorgaans een inwoner zijn. Door Subject als generiek begrip te hanteren, kan het model ook andere entiteiten omvatten indien dat vanuit de business nodig blijkt.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Een subdoel is een nadere uitwerking van een doel die een afzonderlijke gewenste situatie of uitkomst beschrijft en bijdraagt aan het realiseren van het doel.&lt;br/&gt;Een subdoel maakt een doel concreter en kan worden gebruikt om de ontwikkeling of dienstverlening op te delen in samenhangende stappen. &lt;br/&gt;&lt;br/&gt;Een subdoel heeft dezelfde semantische aard als een doel, maar bevindt zich op een lager abstractieniveau. Een subdoel is daarmee iets anders dan een activiteit of instrument.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent != null ? parent.toggleItem('Attributes') : toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent != null ? parent.toggleItem('AssociationsTo') : toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent != null ? parent.toggleItem('TaggedVal') : toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 		</ul>
@@ -193,52 +194,332 @@
 		</tr>
 						<tr>
 				<td width="50%" class="TableRow">
-					<a name="{430A0EAA-7DCA-4343-B29B-7619F6BE1693}"></a>BRK
+					<a name="{D48841A9-99DD-449f-AD2F-C3EFE4B419E0}"></a>beoogdeEinddatum
 				</td>
 				<td width="25%" class="TableRow">
-					Public 
+					Private 
 				</td>
 				<td width="25%" class="TableRow">
-					int
+					Date
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">
-					Indicatie classificerend=Nee<br>Mogelijk geen waarde=Nee<br>Patroon=<br>Toelichting=<br>
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Moment waarop het vastgelegde bedrijfsobject wordt geacht voltooid te zijn. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{E09DD40E-8C4A-44f7-B0B4-4BD99827C715}"></a>beoogdeStartdatum
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA17.htm">Date</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Moment waarop het vastgelegde bedrijfsobject wordt geacht te starten. &lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{03FE791D-0E59-4c2d-A226-E20A30B03B1C}"></a>eigenaar
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA40.htm">URN</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			de eigenaar van het bedrijfsobject. In de regel de aanmaker van de state, dus een persoon, met een URN-verwijzing naar Open Organisatie.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{B68EBABD-3CA8-455a-9C3C-73D2F62381BA}"></a>einddatum
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA17.htm">Date</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Feitelijke einddatum van het bedrijfsobject. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{85CEAD8D-2E0D-4957-9000-FE52A1FA25DB}"></a>identificatie
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					UUID
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Unieke identificatie waarmee het bedrijfsobject eenduidig kan worden herkend.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{40B2F133-F156-4978-A10E-51D0028B75A3}"></a>notitie
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					String
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
 						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{197A25AF-EFD4-4b79-80DA-32C853C5F6D4}"></a>BSN
+					<a name="{63FCBE7C-0C33-4c5a-B351-35021D473C53}"></a>redenWijziging
 				</td>
 				<td width="25%" class="TableRow">
-					Public 
+					Private 
 				</td>
 				<td width="25%" class="TableRow">
-					int
+					RedenWijziging
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">
-					Indicatie classificerend=Nee<br>Mogelijk geen waarde=Nee<br>Patroon=<br>Toelichting=<br>
-						&nbsp;
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			De reden waarom een bepaalde gebeurtenis, wijziging of statusverandering heeft plaatsgevonden. De waarde wordt gekozen uit een vooraf gedefinieerde enumeratie (enum).&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow">
-					<a name="{975FF57E-406E-41d0-83E4-B23E1284CC34}"></a>Type
+					<a name="{171A0088-B844-4a23-ADEE-15701ECF8925}"></a>startdatum
 				</td>
 				<td width="25%" class="TableRow">
-					Public 
+					Private 
 				</td>
 				<td width="25%" class="TableRow">
-					<a href="EA36.htm">SubjecType</a>
+					Date
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="3">
-					Indicatie classificerend=Nee<br>Mogelijk geen waarde=Nee<br>Patroon=<br>Toelichting=<br>
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Feitelijke startdatum van het bedrijfsobject. &lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{010F97F4-B138-436b-93D7-394D1DC56894}"></a>status
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA45.htm">Doelstatus</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			De actuele administratieve status van het bedrijfsobject, bijvoorbeeld actief of be&#235;indigd.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{C79830E4-BEF9-4843-B3F1-5C6DC50C65C5}"></a>toelichtingInwoner
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					String
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Een tekstveld om het object uit te leggen aan de inwoner. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{5473864B-156F-4951-8B03-9888BF3EE826}"></a>toelichtingMedewerker
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					String
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Een tekstveld om het object uit te leggen aan de medewerker. &lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{A9C28793-C52A-4c6f-A8FB-FB2EE8702435}"></a>toelichtingReden
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					String
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Vrije tekst waarin de gekozen reden nader wordt toegelicht of van context wordt voorzien.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow">
+					<a name="{C784200C-81A3-4186-B40C-E61C7926EE62}"></a>voortgang
+				</td>
+				<td width="25%" class="TableRow">
+					Private 
+				</td>
+				<td width="25%" class="TableRow">
+					<a href="EA49.htm">Voortgang</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="3">
+					
 						&nbsp;
 						
 				</td>
@@ -254,7 +535,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA27.htm">«Objecttype» Partij</a><br />
+						<a href="EA48.htm">«Objecttype» Evaluatie</a><br />
 						Class «Relatiesoort» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -268,8 +549,65 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink166" /></button>Details:
-							<div id="detailsDIVLink166" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink146" /></button>Details:
+							<div id="detailsDIVLink146" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Een plan kan meerdere subdoelen hebben, en elk subdoel kan meermaals worden ge&#235;valueerd. &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA33.htm">«Objecttype» Product</a><br />
+						Class «Relatiesoort» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink147" /></button>Details:
+							<div id="detailsDIVLink147" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA44.htm">«Objecttype» Doel</a><br />
+						Class «Relatiesoort» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink148" /></button>Details:
+							<div id="detailsDIVLink148" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -277,7 +615,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA26.htm">«Objecttype» Object</a><br />
+						«Objecttype» Facetten<br />
 						Class «Relatiesoort» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -291,8 +629,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink167" /></button>Details:
-							<div id="detailsDIVLink167" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink149" /></button>Details:
+							<div id="detailsDIVLink149" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -300,7 +638,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA29.htm">«Objecttype» Positie</a><br />
+						<a href="EA36.htm">«Objecttype» Subdoeltype</a><br />
 						Class «Relatiesoort» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -314,32 +652,10 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink168" /></button>Details:
-							<div id="detailsDIVLink168" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA28.htm">«Objecttype» Plan</a><br />
-						Class «Relatiesoort» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink169" /></button>Details:
-							<div id="detailsDIVLink169" class="DetailsDiv" >
-							&nbsp;
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../images/minus03.gif" align="absmiddle" id="DetailsImageLink150" /></button>Details:
+							<div id="detailsDIVLink150" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">In de typologie ligt vast welke vormen van het informatieobject zijn toegestaan. &lt;br/&gt;&lt;br/&gt;</div>
+
 							</div>
 						</div>
 					</td>
@@ -355,7 +671,7 @@
 		</tr>
 					<tr>
 				<td width="50%" class="TableRow" valign="top">Begrip</td>
-				<td width="50%" class="TableRow" valign="top">Een persoon of andere entiteit waarop een positie, plan of vorm van dienstverlening betrekking heeft. Verwijst naar de basisregistratie van het objecttype, en optioneel naar de gemeentelijke registratie (bijvoorbeeld OpenKlant)</td>
+				<td width="50%" class="TableRow" valign="top">Een subdoel is een nadere uitwerking van een doel die een afzonderlijke gewenste situatie of uitkomst beschrijft en bijdraagt aan het realiseren van het doel.</td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
@@ -384,7 +700,7 @@
 				</td>
 			</tr>			<tr>
 				<td width="50%" class="TableRow" valign="top">Toelichting</td>
-				<td width="50%" class="TableRow" valign="top">Het subject is datgene waarop de positie betrekking heeft. In de context van Werk, Inburgering en het Sociaal Domein zal dit doorgaans een inwoner zijn. Door Subject als generiek begrip te hanteren, kan het model ook andere entiteiten omvatten indien dat vanuit de business nodig blijkt.</td>
+				<td width="50%" class="TableRow" valign="top">Een subdoel is een nadere uitwerking van een doel die een afzonderlijke gewenste situatie of uitkomst beschrijft en bijdraagt aan het realiseren van het doel.<br />Een subdoel maakt een doel concreter en kan worden gebruikt om de ontwikkeling of dienstverlening op te delen in samenhangende stappen. <br /><br />Een subdoel heeft dezelfde semantische aard als een doel, maar bevindt zich op een lager abstractieniveau. Een subdoel is daarmee iets anders dan een activiteit of instrument.<br /></td>
 			</tr>	
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="2">
